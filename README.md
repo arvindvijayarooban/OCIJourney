@@ -35,3 +35,13 @@ Day 3: Networking related learning
 - Create a network peering between two VCNs in OCI labs compartment
 - Test connectivity between two VMs using their private ips based on the peering
 
+Day 4: Learn about Compute
+- Create two test compute instances 
+- Created putty access to one of the instance then attempted to ssh between instances 
+- Fun fact: OCI default user, opc has no password created, hence if you messed up with the ssh keys, essentially you're locked out of the instance
+ so create a password for the opc user , ssh keys needs better handling and understanding 
+- I attempted to scp files between instances and got locked out due to ssh mismatch , tried to recover by attaching boot volume of instance to another and modifying the ssh key entries but nothing happening there
+- Deleted locked out instance, restart again, this ssh handling needs more care and attention, best I think is to keep one set of public key and private key
+- Created new compute and rectified all the ssh related errors I did earlier, scp files from one instance to another
+-  created a public facing load balancer, added the instances to the backend
+
