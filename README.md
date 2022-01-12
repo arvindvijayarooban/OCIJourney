@@ -45,3 +45,8 @@ Day 4: Learn about Compute
 - Created new compute and rectified all the ssh related errors I did earlier, scp files from one instance to another
 -  created a public facing load balancer, added the instances to the backend
 
+Day 5: Testing network accessibility of OCI instances
+- Created a custom VNC via the portal and was unable to ssh to the compute instance within that VNC 
+- Figured out that I didn't create a IGW, created one and associated it to a route table, was able to ssh and ping that instance public IP
+
+
