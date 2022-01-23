@@ -1,0 +1,35 @@
+Created a new project to test DevOps 
+Need to provide some policy permissions before able to create DevOps project
+To create devops project need a topic, that too needs its own set of permissions
+
+Moved the project to a new compartment
+
+I have created a user oci-dev but that user couldn't see the compartment the devops project was to be in 
+In the end created a policy based on the hierarchy concept so that the user can see the compartment
+
+Created the project,created a topic before that
+created a cope repo enmpty one ( need to figure out how to link the repo to a server and then push that local repo to OCI)
+
+created a VM instance so that I can push any code to that VM and have it accessible by the public 
+
+Worked in the VM instance
+created a local user arvind
+was unable to ssh to the server using the local instance 
+
+eventually figured out to edit the ssh_config file, adding these values
+
+        PasswordAuthentication yes
+        ChallengeResponseAuthentication no
+        PubkeyAuthentication no
+
+But it was more tricky than initially assumed, had to try multiple times to figure out how to login to the server as a local user
+eventually after many attempts I commented out a few lines  within 
+
+reference like this didn't really helped much https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/addingusers.htm
+however, I figured out with help from googled articles to comment out certain lines and restart ssh , voila now I can login to the server using password and no longer need ssh key 
+
+TBC,
+figure out a way to link repo in local server to OCI, then try to figure out a way to build a pipeline that pushes the code to the server
+
+Additional interets that peaked is using Terraform also to configure the devops project/ the resources needed in the compartment
+
