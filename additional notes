@@ -33,3 +33,14 @@ figure out a way to link repo in local server to OCI, then try to figure out a w
 
 Additional interets that peaked is using Terraform also to configure the devops project/ the resources needed in the compartment
 
+
+--------------------------------------------------
+
+Created a new free dns name and associated it with the always free LB supporting two webservers.
+arvind.sytes.net
+
+Need to create or design a better website then think of linking it with a DB possibly another OCI always free DB service.
+
+
+
+
